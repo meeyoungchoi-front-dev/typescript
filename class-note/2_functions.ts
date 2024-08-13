@@ -1,5 +1,5 @@
 // 함수 파라미터의 타입을 정의하는 박ㅇ식
-function sum(a: number,b: number) {
+function sum1(a: number,b: number) {
     return a + b;
 }
 
@@ -15,3 +15,14 @@ function add(): number {
 function sum2(a: number, b: number) : number {
     return a + b;
 }
+
+// 함수 타입을 정의하는 방식
+function sum3(a: number, b: number) : number {
+    return a + b;
+}
+
+function sum4(a: number, b: number) : number {
+    return a + b;
+}
+
+sum3(10, 20);
