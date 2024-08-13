@@ -26,3 +26,11 @@ function sum4(a: number, b: number) : number {
 }
 
 sum3(10, 20);
+
+// 함수의 옵셔널 파라미터 (선택작 파라미터)
+function log(a: string, b?:string) {
+    
+}
+
+log('helloworld');
+log('hello ts', 'abc');
