@@ -37,3 +37,17 @@ interface StringArray {
 
 let arr: StringArray = ['a', 'b', 'c'];
 
+// 딕셔너리 패턴
+interface StringRegexDictionary {
+    [key: string]: RegExp
+}
+
+let obj = {
+    // sth: /abc/,
+    cssFile: /.js$/,
+    jsFile: /.js$/,
+}
+
+Object.keys(obj).forEach(function(value) {
+
+})
