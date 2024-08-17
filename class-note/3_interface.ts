@@ -51,3 +51,21 @@ let obj = {
 Object.keys(obj).forEach(function(value) {
 
 })
+
+// 인터페이스 확장
+interface Person {
+    name: string;
+    age: number;
+}
+
+interface Developer extends Person {
+    language: string;
+    skill: string;
+}
+
+let captain: Developer = {
+    language: 'TypeScript',
+    skill: 'Good',
+    name: 'josh',
+    age: 100
+}
