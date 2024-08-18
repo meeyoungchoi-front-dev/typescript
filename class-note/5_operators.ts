@@ -25,3 +25,22 @@ function logMessage2(value: string | number) {
 logMessage2('hello');
 logMessage2(100);
 
+// 유니온 타입의 특징
+interface Developer {
+    name: string;
+    skill: string;
+}
+
+interface Person {
+    name: string;
+    age: number;
+}
+
+function askSomeone(someone: Developer  | Person) {
+   //  실제적으로 Developer와 Person이 공통으로 갖고 있는 속성만 접근할 수 있게 된다
+   // 타입 검증없이 skill이나 age를 쓰면 에러가 발생될 수 있다
+   if typeof someone === 'Developer' ) {
+        someone.
+   }
+
+}
