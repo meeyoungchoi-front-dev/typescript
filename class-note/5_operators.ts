@@ -26,7 +26,7 @@ logMessage2('hello');
 logMessage2(100);
 
 // 유니온 타입의 특징
-interface Developer {
+interface Developers {
     name: string;
     skill: string;
 }
@@ -36,19 +36,25 @@ interface Person {
     age: number;
 }
 
-function askSomeone(someone: Developer  | Person) {
+function askSomeone(someone: Developers  | Person) {
    // 실제적으로 Developer와 Person이 공통으로 갖고 있는 속성만 접근할 수 있게 된다
    // 타입 검증없이 skill이나 age를 쓰면 에러가 발생될 수 있다
    // 타입가드에 대한 추가 적인 처리가 필요하다
    // 타입가드는 추후에 배움
 }
+askSomeone({ name: '캡틴', skill: 'web' });
+askSomeone({name: '캡틴', age: 100});
+
+
 
 let sahoow : string | number | boolean;
 let capton : string & number & boolean; // 인터섹션 타입 :  3개의 타입을 모두 만복해야 한다 (string, number, boolean)
 
-function askSomeone2(someone: Developer & Person) { // Developer가 갖고 있는 name과 skill 그리고 Person이 갖고 있는 모든 name과 age를 포함한 3개의 속성을 갖는 타입을 전부 만족하기 때문에 쓸수 있다
-    someone.age
-    someone.name
-    someone.skill
+function askSomeone2(someone: Developers & Person) { // Developer가 갖고 있는 name과 skill 그리고 Person이 갖고 있는 모든 name과 age를 포함한 3개의 속성을 갖는 타입을 전부 만족하기 때문에 쓸수 있다
+    // someone.age
+    // someone.name
+    // someone.skill
 
 }
+askSomeone2({ name: '캡틴', skill: 'web', age: 100 });
+askSomeone2({name: '캡틴', age: 100 , skill: 'typescript'});
