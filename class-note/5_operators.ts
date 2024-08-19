@@ -44,9 +44,9 @@ function askSomeone(someone: Developer  | Person) {
 }
 
 let sahoow : string | number | boolean;
-let capton : string & number & boolean; // 인터게션 타입 :  3개의 타입을 모두 만복해야 한다
+let capton : string & number & boolean; // 인터섹션 타입 :  3개의 타입을 모두 만복해야 한다 (string, number, boolean)
 
-function askSomeone2(someone: Developer & Person) { // Developer가 갖고 있는 name과 skill 그리고 Person이 갖고 있는 모든 name과 age를 포함한 3개의 속성을 갖는 타입
+function askSomeone2(someone: Developer & Person) { // Developer가 갖고 있는 name과 skill 그리고 Person이 갖고 있는 모든 name과 age를 포함한 3개의 속성을 갖는 타입을 전부 만족하기 때문에 쓸수 있다
     someone.age
     someone.name
     someone.skill
