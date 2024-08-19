@@ -37,9 +37,10 @@ interface Person {
 }
 
 function askSomeone(someone: Developer  | Person) {
-   //  실제적으로 Developer와 Person이 공통으로 갖고 있는 속성만 접근할 수 있게 된다
+   // 실제적으로 Developer와 Person이 공통으로 갖고 있는 속성만 접근할 수 있게 된다
    // 타입 검증없이 skill이나 age를 쓰면 에러가 발생될 수 있다
-   // 타입가드에 대한 추가 적인 처리ㅎ가 필요하다
+   // 타입가드에 대한 추가 적인 처리가 필요하다
+   // 타입가드는 추후에 배움
 }
 
 let sahoow : string | number | boolean;
