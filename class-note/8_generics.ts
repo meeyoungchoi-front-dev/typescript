@@ -43,3 +43,16 @@ function logText4(text:string | number) {
 
 const a = logText4('하이'); // 문자열 하이
 const b = logText4(10); // 숫자 10
+
+
+
+
+function logText5<T>(text: T): T {
+    console.log(text);
+    return text;
+}
+
+const c = logText5<string>('하이'); 
+c.split('');
+const d = logText5<number>(10); 
+const login = logText5<boolean>(true); 
