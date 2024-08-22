@@ -35,3 +35,11 @@ function logBoolean(text: boolean) {
 logNumber(10); // 숫자 10
 logText3('하이'); // 문자열 하이
 logBoolean(true); // 진위값 true
+
+function logText4(text:string | number) {
+    console.log(text);
+    return text;
+}
+
+const a = logText4('하이'); // 문자열 하이
+const b = logText4(10); // 숫자 10
