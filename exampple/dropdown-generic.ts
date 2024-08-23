@@ -49,6 +49,6 @@ emails.forEach(function (email) {
   }
 });
 
-numberOfProducts.forEach(function(product) {
-  const item = createDropdownItem(product);
-})
+// numberOfProducts.forEach(function(product) {
+//   const item = createDropdownItem(product);
+// })
