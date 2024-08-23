@@ -71,3 +71,13 @@ interface Drowpdown2<T> {
 }
 
 const obj2: Drowpdown2<string> = {value:'abc', lselected: false};
+
+// 제네릭의 타입 제한
+function logTextLength<T>(text: T[]): T[] {
+    text.forEach(function(text){
+        console.log(text);
+    })
+    return text;
+}    
+
+logTextLength<string>(['hi']);
