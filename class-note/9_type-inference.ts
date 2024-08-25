@@ -27,3 +27,5 @@ let shoppingItme: Dropwdown2<string> = {
     value: 'apple',
     title: 'hello'
 }
+
+let arr = [1,2,true, true, 'a'];
