@@ -10,6 +10,19 @@ interface Dropwdown2<T> {
     title: string;
 }
 
+interface DetailedDropdown<K> extends Dropwdown2<K> {
+    description: string;
+    tag: K;
+}
+
+let detailedItem: DetailedDropdown<string> = {
+    title: 'abc',
+    description: 'ab',
+    value: 'abcde',
+    tag: 'e'
+
+}
+
 let shoppingItme: Dropwdown2<string> = {
     value: 'apple',
     title: 'hello'
