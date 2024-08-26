@@ -6,3 +6,6 @@ let b = a as string;
 // DOM API 조작
 // <div id="app">hi</div>
 let div = document.querySelector('div');
+if (div) {
+    div.innterText
+}
